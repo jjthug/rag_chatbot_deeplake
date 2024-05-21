@@ -4,7 +4,7 @@ from langchain.retrievers import ContextualCompressionRetriever
 from langchain.retrievers.document_compressors import CohereRerank
 import os
 
-
+# no need for local
 os.environ["COHERE_API_KEY"] = db.secrets.get("COHERE_API_KEY")
 os.environ["ACTIVELOOP_TOKEN"] = db.secrets.get("ACTIVELOOP_TOKEN")
 
